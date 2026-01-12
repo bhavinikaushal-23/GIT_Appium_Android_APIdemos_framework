@@ -1,0 +1,28 @@
+yoooooo HELLO WORLD  ####
+
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Android / Appium
+*.apk
+.android/
+.appium/
+
+# OS
+Thumbs.db
+.DS_Store
+
+o.txt
+
+
+# Test output
+test-output/
+
+# Docs / temp files
+*.docx
+~$*

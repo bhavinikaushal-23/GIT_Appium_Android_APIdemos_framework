@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite APPIUM->> PARALLEL TEST Execution"
+	parallel="tests" thread-count="2">
+
+	<test name="Emulator-5554 Test">
+		<parameter name="deviceName" value="Pixel 6 API 34" />
+		<parameter name="udid" value="emulator-5554" />
+		<parameter name="platformVersion" value="14" />
+		<parameter name="systemPort" value="8200" />
+
+		<classes>
+			<class name="tests.SmokeTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+
+	<test name="phone">
+		<parameter name="deviceName" value="Phone_android" />
+		<parameter name="udid" value="192.168.1.154:33955" />
+		<parameter name="platformVersion" value="13" />
+		<parameter name="systemPort" value="8201" />
+		<classes>
+			<class name="tests.SmokeTest" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
